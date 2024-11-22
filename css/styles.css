@@ -18,6 +18,16 @@ li {list-style-type: none; }
 .navigation-link:hover {color: #404BBF; }
 .navigation-link:active {color: #404bbf; }
 .navigation-link:focus {color: #404bbf; }
+.navigation-link.studio {color: #404bbf; position: relative; }
+.navigation-link.studio::after {
+    position:absolute;
+    bottom: -4px;
+    left: 0;
+ content: "";
+border-radius: 2px;
+    width: 48px;
+    height: 4px;
+background: #404bbf; }
 .contacts-info-list {display: flex; gap:40px; padding-top: 24px; padding-bottom: 24px; }
 .contact {text-decoration: none; color: #434455; font-style: normal; line-height: 1.5; letter-spacing: 0.02em; max-width: 153px; max-height: 24px; }
 .contact:hover {color:#404bbf; }
@@ -26,9 +36,11 @@ li {list-style-type: none; }
 .contacts-info {font-style: normal;}
 /*main title*/
 .container.container-main-title {width: 1158px; padding: 0 15px; margin: 0 auto; }
-.main-title {background-color: #2E2F42; 
+.main-title {background-color: #2E2F42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-min.jpg) ;
+    background-size: cover;
     line-height: 1.07; 
-    padding: 188px 0;  }
+    padding: 188px 0; }
 .title {text-align: center;
 margin-bottom:  48px; 
 max-width: 496px; 
