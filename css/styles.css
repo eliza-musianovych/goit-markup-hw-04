@@ -71,7 +71,9 @@ background: #404bbf; }
     background-repeat: no-repeat;
     background-position: center;
     line-height: 1.07; 
-    padding: 188px 0; }
+    padding: 188px 0; 
+    max-width: 1440px;
+}
 .title {
 text-align: center;
 margin-bottom:  48px; 
@@ -115,21 +117,19 @@ margin-right: auto; }
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.icons-container {
-    display: flex; 
-    align-items: center; 
-    gap: 24px;
-    justify-content: center;
-}
 .icon-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
     height: 112px;
-    width: calc((100% - 3 * 24px) / 4);
     background-color: #f4f4fd;
     border-radius: 4px;
     border: 1px solid #8e8f99;
     margin-bottom: 8px;
     padding: 24px 100px;
 }
+.icon {fill: #FFFFFF; }
 .advantages-list-container {list-style-type: none; display: flex; gap: 24px; justify-content: center; }
 .advantages-list {width: calc((100% - 3 * 24px) / 4); }
 .advantages-title {margin-bottom: 8px; }
@@ -166,6 +166,7 @@ margin-right: auto; }
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 .icon-link:hover {background-color: #404bbf; }
 .icon-link:focus {background-color: #404bbf; }
@@ -180,9 +181,9 @@ margin-right: auto; }
     background-color: #FFFFFF; 
     width: calc((100% - 48px) / 3);
     cursor: pointer;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-list:hover {
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
 }
@@ -227,11 +228,12 @@ transform: translateY(0%);
         color: #fff;
         margin-bottom: 16px;
 }
-.icon-box-footer {width: 40px; height: 40px; transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); }
+.icon-box-footer {width: 40px; height: 40px; }
 .icon-contact-footer {
     margin: 8px;
     fill: #f4f4fd;
 }
+.icon-link.footer-icon {transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); }
 .icon-link.footer-icon:hover {background-color: #31d0aa; }
 .icon-link.footer-icon:focus {background-color: #31d0aa; }
 .footer-text {color: #F4F4FD; line-height: 1.5; letter-spacing: 0.02em; width: 264px; }
